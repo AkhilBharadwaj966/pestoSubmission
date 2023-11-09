@@ -72,7 +72,10 @@ To set up the backend component, follow these steps:
 
 
 
-6. To run the automated tests for the backend : ./mvnw test
-This command will execute all the tests in the application and provide a summary of the results.  
+6. To run the automated tests for the backend :
+   ```bash
+   ./mvnw test
+   ```
+    This command will execute all the tests in the application and provide a summary of the results.  
 
 
