@@ -23,36 +23,53 @@ A step by step series of examples that tell you how to get a development environ
 #### Front End Setup
 
 # Navigate to the front end directory from the cloned directory
+```bash
 cd [fronttodo]
+```
 
 # Install Yarn package manager via npm
+```bash
 npm install --global yarn
+```
 
 # Install dependencies
+```bash
 yarn install
+```
 
 # Start the front end application
+```bash
 yarn start
+```
 
 The application should now be running and accessible through a web browser at http://localhost:3000 by default.
 
-#### Back End Setup
+#### Backend Setup
+
+To set up the backend component, follow these steps:
+
 1. Ensure PostgreSQL is installed and running on your local machine.
 
 2. Create a new PostgreSQL database for the application.
 
+3. Navigate to the backend directory from the cloned repository:
+    ```bash
+    cd [todoBackend/todo]
+    ```
 
-3. # Navigate to the backend end directory from the cloned directory
-  cd [todoBackend/todo]
+4. Configure the `src/main/resources/application.properties` file with the PostgreSQL username and password:
+    ```properties
+    spring.datasource.url=jdbc:postgresql://localhost:5432/[your-database-name]
+    spring.datasource.username=[your-username]
+    spring.datasource.password=[your-password]
+    ```
 
-4. Configure the src/main/resources/application.properties file with the PostgreSQL username and password:
-        spring.datasource.url=jdbc:postgresql://localhost:5432/[your-database-name]
-        spring.datasource.username=[your-username]
-        spring.datasource.password=[your-password]
+5. Run the application using the included Maven wrapper:
+    ```bash
+    ./mvnw spring-boot:run
+    ```
+   The backend should now be running and listening for HTTP requests typically on port `8080`.
 
-
-5. Run the application using the included Maven wrapper: ./mvnw spring-boot:run
-    The backend should now be running and listening for HTTP requests typically on port 8080.
 
 
 6. To run the automated tests for the backend : ./mvnw test
