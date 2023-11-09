@@ -1,6 +1,6 @@
 # Pesto Assessment Submission
 
-# FUll Stack Task Manager
+# Full Stack Task Manager
 
 This project consists of two main components: the front end, which is written in React with TypeScript, and the backend, which is a Spring Boot application written in Java with a PostgreSQL database.
 ## Getting Started
