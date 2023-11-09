@@ -13,7 +13,7 @@ What things you need to install the software and how to install them:
 
 - Node.js (Front end)
 - Yarn package manager (Front end)
-- Java Development Kit (JDK) (Backend)
+- Java Development Kit (JDK) (Backend) ( 17.0.5 )
 - PostgreSQL (Backend)
 
 ### Installing
@@ -24,7 +24,7 @@ A step by step series of examples that tell you how to get a development environ
 
 # Navigate to the front end directory from the cloned directory
 ```bash
-cd [fronttodo]
+cd ./fronttodo
 ```
 
 # Install Yarn package manager via npm
@@ -54,7 +54,7 @@ To set up the backend component, follow these steps:
 
 3. Navigate to the backend directory from the cloned repository:
     ```bash
-    cd [todoBackend/todo]
+    cd ./todoBackend/todo
     ```
 
 4. Configure the `src/main/resources/application.properties` file with the PostgreSQL username and password:
