@@ -1,6 +1,6 @@
-# pestoSubmission
+# Pesto Assessment Submission
 
-# Project Title Task Manager
+# FUll Stack Task Manager
 
 This project consists of two main components: the front end, which is written in React with TypeScript, and the backend, which is a Spring Boot application written in Java with a PostgreSQL database.
 ## Getting Started
@@ -37,24 +37,25 @@ yarn start
 The application should now be running and accessible through a web browser at http://localhost:3000 by default.
 
 #### Back End Setup
-Ensure PostgreSQL is installed and running on your local machine.
-Create a new PostgreSQL database for the application.
+1. Ensure PostgreSQL is installed and running on your local machine.
+
+2. Create a new PostgreSQL database for the application.
 
 
-# Navigate to the backend end directory from the cloned directory
-cd [todoBackend/todo]
+3. # Navigate to the backend end directory from the cloned directory
+  cd [todoBackend/todo]
 
-Configure the src/main/resources/application.properties file with the PostgreSQL username and password:
-spring.datasource.url=jdbc:postgresql://localhost:5432/[your-database-name]
-spring.datasource.username=[your-username]
-spring.datasource.password=[your-password]
-
-
-Run the application using the included Maven wrapper: ./mvnw spring-boot:run
-The backend should now be running and listening for HTTP requests typically on port 8080.
+4. Configure the src/main/resources/application.properties file with the PostgreSQL username and password:
+        spring.datasource.url=jdbc:postgresql://localhost:5432/[your-database-name]
+        spring.datasource.username=[your-username]
+        spring.datasource.password=[your-password]
 
 
-To run the automated tests for the backend : ./mvnw test
+5. Run the application using the included Maven wrapper: ./mvnw spring-boot:run
+    The backend should now be running and listening for HTTP requests typically on port 8080.
+
+
+6. To run the automated tests for the backend : ./mvnw test
 This command will execute all the tests in the application and provide a summary of the results.  
 
 
